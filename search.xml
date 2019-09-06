@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[my first hexo Post]]></title>
+    <url>%2F2019%2F09%2F06%2Fmy-first-hexo-Post%2F</url>
+    <content type="text"><![CDATA[1、这是我的测试文章你们好啊，今天天气不错！]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[my first hexo Post]]></title>
+    <url>%2F2019%2F09%2F06%2F%E8%BD%AC%E5%8F%91%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[本人正在学习java，之前一直困扰二者有什么区别，经过一番查阅资料，终于恍然大悟。 Servlet的转发有两种：转发和重定向。 转发： 1httpServletRequest.getRequestDispatcher(&quot;资源路径&quot;).forward(httpServletRequest, httpServletResponse); 重定向： 1httpServletResponse.sendRedirect(&quot;/资源路径&quot;); 转发的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有转发代码存在, 直接跳转到新的资源（注意：这个过程是连续的，在这个过程中session可以跟随传递） 网页显示返回结果，地址栏不会变化 重定向的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有重定向代码存在 服务器会立即通知浏览器，告诉它，你去访问这个资源 这时浏览器会对新资源重新发起访问（这个过程是断开的，中间不连续） 地址栏产生相应的变化 二者的区别： 转发地址栏不会变化，重定向会变化。 转发是一次请求，而重定向是两次。 转发速度较快，重定向较慢（因为浏览器要重新发起请求）。 由于重定向是重新对资源发起访问，而浏览器默认访问方式为get，所以对应的新响应要换成get，当然这是默认情况。注意一下即可。 转发不会造成信息丢失，而重定向则会造成信息丢失。 转发只能将请求转发给同一个WEB应用中的组件，重定向可以指向任何的资源，包括当前应用程序中的其他资源，同一个站点上的其他应用程序中的资源，其他站点的资源。** 如何选择转发还是重定向？ 典型的应用场景： ​ 转发：访问 Servlet 处理业务逻辑，然后 forward 到 jsp 显示处理结果，浏览器里 URL 不变 ​ 重定向:提交表单，处理成功后 redirect 到另一个 jsp，防止表单重复提交，浏览器里 URL 变了]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F09%2F06%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
