@@ -5,14 +5,22 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -123,7 +131,7 @@
 <meta property="og:title" content="假装很佛系">
 <meta property="og:url" content="http://zsblogs.com/index.html">
 <meta property="og:site_name" content="假装很佛系">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="假装很佛系">
 
@@ -135,13 +143,13 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":20,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -173,7 +181,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -265,7 +273,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            Search
+            搜索
           </a>
         </li>
       
@@ -284,7 +292,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -321,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/06/my-first-hexo-Post/">
+    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/08/前言/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小帅">
@@ -340,20 +348,25 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/06/my-first-hexo-Post/" itemprop="url">my first hexo Post</a></h1>
+                <a class="post-title-link" href="/2019/09/08/前言/" itemprop="url">前言</a></h1>
         
 
         <div class="post-meta">
+		
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-06T14:43:26+08:00">
-                2019-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T19:50:43+08:00">
+                2019-09-08
               </time>
             
 
@@ -363,38 +376,49 @@
           </span>
 
           
-            <span class="post-category">
+
+          
             
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
               
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web前端/" itemprop="url" rel="index">
-                    <span itemprop="name">web前端</span>
-                  </a>
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
                 </span>
-
                 
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
+                <span title="字数统计">
+                  90
+                </span>
               
-            </span>
-          
 
-          
-            
-          
+              
+                <span class="post-meta-divider">|</span>
+              
 
-          
-          
-
-          
-
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
           
 
           
@@ -414,7 +438,11 @@
       
         
           
-            <h4 id="1、这是我的测试文章"><a href="#1、这是我的测试文章" class="headerlink" title="1、这是我的测试文章"></a>1、这是我的测试文章</h4><p>你们好啊，今天天气不错！</p>
+            <p>你迷茫的原因在于读书太少而想的太多。</p>
+<p>你问我有哪些进步？我开始成为我自己的朋友。</p>
+<p>如果每个人都能理解你，那你得普通成什么样子。</p>
+<p>若能避开猛烈的狂喜，自然不会有悲痛来袭。</p>
+<p>你看到的世界其实就是你自己的样子。</p>
 
           
         
@@ -423,7 +451,9 @@
     
     
     
-
+	<div>
+      
+</div>
     
 
     
@@ -465,7 +495,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/06/转发与重定向的区别/">
+    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/07/Maven环境配置-基于Eclipse/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小帅">
@@ -484,20 +514,21 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/06/转发与重定向的区别/" itemprop="url">my first hexo Post</a></h1>
+                <a class="post-title-link" href="/2019/09/07/Maven环境配置-基于Eclipse/" itemprop="url">Maven环境配置(基于Eclipse)</a></h1>
         
 
         <div class="post-meta">
+		
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-06T14:43:26+08:00">
-                2019-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-07T19:34:40+08:00">
+                2019-09-07
               </time>
             
 
@@ -515,7 +546,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -540,6 +571,39 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  498
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
           
 
@@ -557,54 +621,26 @@
 
       
         
-          
-            <p>本人正在学习java，之前一直困扰二者有什么区别，经过一番查阅资料，终于恍然大悟。</p>
-<p>Servlet的转发有两种：转发和重定向。</p>
-<p><strong>转发</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpServletRequest.getRequestDispatcher(&quot;资源路径&quot;).forward(httpServletRequest, httpServletResponse);</span><br></pre></td></tr></table></figure>
-
-<p><strong>重定向</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpServletResponse.sendRedirect(&quot;/资源路径&quot;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>转发的过程</strong>：</p>
-<ul>
-<li>浏览器向服务器发送请求</li>
-<li>服务器接收请求并处理请求</li>
-<li>这时服务器发现有转发代码存在,</li>
-<li>直接跳转到新的资源（注意：这个过程是连续的，在这个过程中session可以跟随传递）</li>
-<li>网页显示返回结果，地址栏不会变化</li>
-</ul>
-<p><strong>重定向的过程</strong>：</p>
-<ul>
-<li>浏览器向服务器发送请求</li>
-<li>服务器接收请求并处理请求</li>
-<li>这时服务器发现有重定向代码存在</li>
-<li>服务器会立即通知浏览器，告诉它，你去访问这个资源</li>
-<li>这时浏览器会对新资源重新发起访问（这个过程是断开的，中间不连续）</li>
-<li>地址栏产生相应的变化</li>
-</ul>
-<p><strong>二者的区别</strong>：</p>
-<ul>
-<li>转发地址栏不会变化，重定向会变化。</li>
-<li>转发是一次请求，而重定向是两次。</li>
-<li>转发速度较快，重定向较慢（因为浏览器要重新发起请求）。</li>
-<li>由于重定向是重新对资源发起访问，而浏览器默认访问方式为get，所以对应的新响应要换成get，当然这是默认情况。注意一下即可。</li>
-<li>转发不会造成信息丢失，而重定向则会造成信息丢失。</li>
-<li>转发只能将请求转发给同一个WEB应用中的组件，重定向可以指向任何的资源，包括当前应用程序中的其他资源，同一个站点上的其他应用程序中的资源，其他站点的资源。**</li>
-</ul>
-<p>如何选择转发还是重定向？</p>
-<p><strong>典型的应用场景</strong>：</p>
-<p>​        <strong>转发：访问 Servlet 处理业务逻辑，然后 forward 到 jsp 显示处理结果，浏览器里 URL 不变</strong></p>
-<p>​        <strong>重定向:提交表单，处理成功后 redirect 到另一个 jsp，防止表单重复提交，浏览器里 URL 变了</strong></p>
-
-          
+          <blockquote>
+<p><strong>Apache Maven</strong>，是一个<a href="https://zh.wikipedia.org/wiki/软件" target="_blank" rel="noopener">软件</a>（特别是<a href="https://zh.wikipedia.org/wiki/Java_(编程语言)" target="_blank" rel="noopener">Java</a>软件）<a href="https://zh.wikipedia.org/wiki/项目管理" target="_blank" rel="noopener">项目管理</a>及<a href="https://zh.wikipedia.org/wiki/自动构建" target="_blank" rel="noopener">自动构建</a>工具，由<a href="https://zh.wikipedia.org/wiki/Apache软件基金会" target="_blank" rel="noopener">Apache软件基金会</a>所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。</p>
+<p>Maven也可被用于构建和管理各种项目，例如<a href="https://zh.wikipedia.org/wiki/C♯" target="_blank" rel="noopener">C#</a>，<a href="https://zh.wikipedia.org/wiki/Ruby" target="_blank" rel="noopener">Ruby</a>，<a href="https://zh.wikipedia.org/wiki/Scala" target="_blank" rel="noopener">Scala</a>和其他语言编写的项目。Maven曾是<a href="https://zh.wikipedia.org/wiki/Jakarta项目" target="_blank" rel="noopener">Jakarta项目</a>的子项目，现为由<a href="https://zh.wikipedia.org/wiki/Apache软件基金会" target="_blank" rel="noopener">Apache软件基金会</a>主持的独立Apache项目。</p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/07/Maven环境配置-基于Eclipse/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
     
     
     
-
+	<div>
+      
+</div>
     
 
     
@@ -646,7 +682,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/06/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/07/Servlet-Jsp项目实战/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小帅">
@@ -665,20 +701,21 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/06/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2019/09/07/Servlet-Jsp项目实战/" itemprop="url">Servlet+Jsp项目实战</a></h1>
         
 
         <div class="post-meta">
+		
           <span class="post-time">
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-06T10:19:36+08:00">
-                2019-09-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-07T15:44:45+08:00">
+                2019-09-07
               </time>
             
 
@@ -688,6 +725,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JAVA/" itemprop="url" rel="index">
+                    <span itemprop="name">JAVA</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -698,6 +757,39 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  216
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
           
 
           
@@ -717,19 +809,79 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h2 id="信息管理系统"><a href="#信息管理系统" class="headerlink" title="信息管理系统"></a>信息管理系统</h2><h3 id="技术需求"><a href="#技术需求" class="headerlink" title="技术需求"></a>技术需求</h3><ul>
+<li>Servlet+jsp+mvc+jdbc</li>
+</ul>
+<h3 id="软件需求："><a href="#软件需求：" class="headerlink" title="软件需求："></a>软件需求：</h3><ul>
+<li>开发工具：myEclipse</li>
+<li>数据库：MYSQL</li>
+<li>服务器：Tomcat</li>
+<li>浏览器：Firefox</li>
+</ul>
+<h3 id="硬件需求："><a href="#硬件需求：" class="headerlink" title="硬件需求："></a>硬件需求：</h3><ul>
+<li>一台电脑</li>
+</ul>
+<h3 id="功能需求："><a href="#功能需求：" class="headerlink" title="功能需求："></a>功能需求：</h3><ul>
+<li>完成用户登录</li>
+<li>完成用户注册</li>
+<li>完成用户退出</li>
+<li>完成查看个人信息</li>
+<li>完成修改密码</li>
+<li>完成查询所有用户信息</li>
+</ul>
+<h3 id="数据库设计："><a href="#数据库设计：" class="headerlink" title="数据库设计："></a>数据库设计：</h3><p>创建用户表：t_user</p>
+<p>表结构设计：</p>
+<table>
+<thead>
+<tr>
+<th align="center">字段名</th>
+<th align="center">类型</th>
+<th align="center">约束</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">uid</td>
+<td align="center">int(10)</td>
+<td align="center">主键、非空、自增</td>
+</tr>
+<tr>
+<td align="center">uname</td>
+<td align="center">varchar(50)</td>
+<td align="center">非空</td>
+</tr>
+<tr>
+<td align="center">pwd</td>
+<td align="center">varchar(50)</td>
+<td align="center">非空</td>
+</tr>
+<tr>
+<td align="center">sex</td>
+<td align="center">char(2)</td>
+<td align="center">非空</td>
+</tr>
+<tr>
+<td align="center">age</td>
+<td align="center">int(3)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">birth</td>
+<td align="center">date</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h3 id="代码规范："><a href="#代码规范：" class="headerlink" title="代码规范："></a>代码规范：</h3><h5 id="命名规范："><a href="#命名规范：" class="headerlink" title="命名规范："></a>命名规范：</h5><ul>
+<li>包名：com.zs.*</li>
+<li>类名：首字母大写，见名知意</li>
+<li>变量名和方法名：驼峰原则，见名知意</li>
+</ul>
+<h5 id="注释规范："><a href="#注释规范：" class="headerlink" title="注释规范："></a>注释规范：</h5><ul>
+<li>方法功能注释</li>
+<li>方法体核心位置必须有说明注释</li>
+</ul>
+<h5 id="日志规范："><a href="#日志规范：" class="headerlink" title="日志规范："></a>日志规范：</h5><ul>
+<li>使用log4j进行日志输出</li>
+</ul>
 
           
         
@@ -738,7 +890,9 @@
     
     
     
-
+	<div>
+      
+</div>
     
 
     
@@ -770,6 +924,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -797,6 +955,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -807,7 +967,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+			<a href="/">
               <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="张小帅">
+			</a>
             
               <p class="site-author-name" itemprop="name">张小帅</p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -820,8 +982,8 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -831,8 +993,8 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -843,7 +1005,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -936,14 +1098,14 @@
 -->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共639字</span>
+  <span class="post-count">博客全站共2.9k字</span>
 </div>
 
 <!--此处为建站时间 -->
     <script>
     var now = new Date(); 
 function createtime() { 
-    var grt= new Date("04/17/2017 20:01:01");
+    var grt= new Date("01/09/2019 20:01:01");
     now.setTime(now.getTime()+250); 
     days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
     hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
@@ -958,6 +1120,7 @@ setInterval("createtime()",250);
 </script>
 
 
+
         
 <div class="busuanzi-count">
   <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -968,7 +1131,7 @@ setInterval("createtime()",250);
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人次
     </span><span class="post-meta-divider">|</span></font>
     <font color="DarkSlateGray" face="STLiti">
-    <span title="总字数"><i class="fa fa-edit"></i>&ensp;<span class="post-count">639</span>字,</span>
+    <span title="总字数"><i class="fa fa-edit"></i>&ensp;<span class="post-count">2.9k</span>字,</span>
     <span id="timeDate" title="网站运行时间">载入天数...</span><span id="times" title="网站运行时间">载入时分秒...</span><span class="post-meta-divider">|</span>
     </font>
   
@@ -1465,9 +1628,9 @@ setInterval("createtime()",250);
   
 
   
-<script type="text/javascript" color="0,0,255" opacity="0.7" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+<script type="text/javascript" color="0,255,255" opacity="0.7" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative)","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":100,"height":180},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></body>
 </html>

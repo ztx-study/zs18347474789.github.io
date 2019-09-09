@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[my first hexo Post]]></title>
-    <url>%2F2019%2F09%2F06%2Fmy-first-hexo-Post%2F</url>
-    <content type="text"><![CDATA[1、这是我的测试文章你们好啊，今天天气不错！]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
+    <title><![CDATA[前言]]></title>
+    <url>%2F2019%2F09%2F08%2F%E5%89%8D%E8%A8%80%2F</url>
+    <content type="text"><![CDATA[你迷茫的原因在于读书太少而想的太多。 你问我有哪些进步？我开始成为我自己的朋友。 如果每个人都能理解你，那你得普通成什么样子。 若能避开猛烈的狂喜，自然不会有悲痛来袭。 你看到的世界其实就是你自己的样子。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[my first hexo Post]]></title>
-    <url>%2F2019%2F09%2F06%2F%E8%BD%AC%E5%8F%91%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
-    <content type="text"><![CDATA[本人正在学习java，之前一直困扰二者有什么区别，经过一番查阅资料，终于恍然大悟。 Servlet的转发有两种：转发和重定向。 转发： 1httpServletRequest.getRequestDispatcher(&quot;资源路径&quot;).forward(httpServletRequest, httpServletResponse); 重定向： 1httpServletResponse.sendRedirect(&quot;/资源路径&quot;); 转发的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有转发代码存在, 直接跳转到新的资源（注意：这个过程是连续的，在这个过程中session可以跟随传递） 网页显示返回结果，地址栏不会变化 重定向的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有重定向代码存在 服务器会立即通知浏览器，告诉它，你去访问这个资源 这时浏览器会对新资源重新发起访问（这个过程是断开的，中间不连续） 地址栏产生相应的变化 二者的区别： 转发地址栏不会变化，重定向会变化。 转发是一次请求，而重定向是两次。 转发速度较快，重定向较慢（因为浏览器要重新发起请求）。 由于重定向是重新对资源发起访问，而浏览器默认访问方式为get，所以对应的新响应要换成get，当然这是默认情况。注意一下即可。 转发不会造成信息丢失，而重定向则会造成信息丢失。 转发只能将请求转发给同一个WEB应用中的组件，重定向可以指向任何的资源，包括当前应用程序中的其他资源，同一个站点上的其他应用程序中的资源，其他站点的资源。** 如何选择转发还是重定向？ 典型的应用场景： ​ 转发：访问 Servlet 处理业务逻辑，然后 forward 到 jsp 显示处理结果，浏览器里 URL 不变 ​ 重定向:提交表单，处理成功后 redirect 到另一个 jsp，防止表单重复提交，浏览器里 URL 变了]]></content>
+    <title><![CDATA[Maven环境配置(基于Eclipse)]]></title>
+    <url>%2F2019%2F09%2F07%2FMaven%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-%E5%9F%BA%E4%BA%8EEclipse%2F</url>
+    <content type="text"><![CDATA[Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。 Maven也可被用于构建和管理各种项目，例如C#，Ruby，Scala和其他语言编写的项目。Maven曾是Jakarta项目的子项目，现为由Apache软件基金会主持的独立Apache项目。 一、安装Maven1、Maven下载、解压2、设置环境变量 121、新建变量M2_HOME，值为Maven的目录X:\XXX\apache-maven-XXX2、Path变量：将%M2_HOME%\bin添加到Path变量下 3、运行CMD，输入mvn -v后可以看到Maven的版本信息等则表示安装成功 4、报错信息处理(如果正常输出版本信息则省略) 1234567891.不是内部或外部命令 解决方案： 编辑环境变量Path，以前是（%MAVEN_HOME%\bin\），改为E:\Mavenaven\apache-maven-3.5.0\bin(也就是bin目录的绝对路径) 重启DOS窗口。2.报错 Exception in thread “main” java.lang.UnsupportedClassVersionError 这个错误是因为maven版本和jdk版本不兼容，需要更换jdk或maven版本 二、修改本地仓库的位置：（X:\XXX\apache-maven-3.5.3指的是maven解压之后的路径，即环境变量M2_HOME的值）X:\XXX\apache-maven-3.5.3\conf\settings.xml文件：添加如下语句 1&lt;localRepository&gt;D:/Java/maven/repository&lt;/localRepository&gt; 三、Maven镜像更换为阿里云中央仓库：X:\XXX\apache-maven-3.5.3\conf\settings.xml文件：在标签下添加如下语句： 123456&lt;mirror&gt; &lt;id&gt;alimaven&lt;/id&gt; &lt;name&gt;aliyun maven&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt; 四、Eclipse中配置maven、创建maven项目配置maven：https://www.cnblogs.com/pengyan-9826/p/7767070.html创建maven项目：https://blog.csdn.net/u012081441/article/details/75201197 五、安装spring-tool-suit插件https://www.cnblogs.com/MrYoodb/p/7574566.html]]></content>
       <categories>
         <category>JAVA</category>
       </categories>
@@ -23,8 +17,36 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F09%2F06%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Servlet+Jsp项目实战]]></title>
+    <url>%2F2019%2F09%2F07%2FServlet-Jsp%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98%2F</url>
+    <content type="text"><![CDATA[信息管理系统技术需求 Servlet+jsp+mvc+jdbc 软件需求： 开发工具：myEclipse 数据库：MYSQL 服务器：Tomcat 浏览器：Firefox 硬件需求： 一台电脑 功能需求： 完成用户登录 完成用户注册 完成用户退出 完成查看个人信息 完成修改密码 完成查询所有用户信息 数据库设计：创建用户表：t_user 表结构设计： 字段名 类型 约束 uid int(10) 主键、非空、自增 uname varchar(50) 非空 pwd varchar(50) 非空 sex char(2) 非空 age int(3) birth date 代码规范：命名规范： 包名：com.zs.* 类名：首字母大写，见名知意 变量名和方法名：驼峰原则，见名知意 注释规范： 方法功能注释 方法体核心位置必须有说明注释 日志规范： 使用log4j进行日志输出]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Jsp知识点整合]]></title>
+    <url>%2F2019%2F09%2F07%2FJsp%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E5%90%88%2F</url>
+    <content type="text"><![CDATA[JSP 与 PHP、ASP、ASP.NET 等语言类似，运行在服务端的语言。 JSP（全称Java Server Pages）是由 Sun Microsystems 公司倡导和许多公司参与共同创建的一种使软件开发者可以响应客户端请求，而动态生成 HTML、XML 或其他格式文档的Web网页的技术标准。 JSP 技术是以 Java 语言作为脚本语言的，JSP 网页为整个服务器端的 Java 库单元提供了一个接口来服务于HTTP的应用程序。 JSP文件后缀名为 *.jsp 。 JSP开发的WEB应用可以跨平台使用，既可以运行在 Linux 上也能运行在 Windows 上。 Jsp的三种注释前端语言注释：会被转译，也会被发送java语言注释：会被转译，不会被servlet执行Jsp注释：不会被转译 Jsp的Page指令：1&lt;%@page 属性名="属性值" 属性名="属性值" ...%&gt; ​ language:声明jsp要被转义的语言（其实只能java）。​ import：导入java包，不同的包使用逗号隔开​ pageEncoding：当前jsp文件所保存的编码格式。​ session:设置转义的servlet中是否开启session支持​ errorPage：设置jsp运行错误跳转的页面​ extends：设置jsp转义的java文件要继承的父类（包名加类名）​​ 作用：​ 配置jsp文件转译相关的参数，必须要有。 jsp的局部代码块：​ 声明java代码 1&lt;% int i = 4;out.println(i);%&gt; ​ 特点：局部代码块中声明的java代码会被原样转译到对应servlet文件的_JspServlce方法中​ 缺点：使用局部代码快在jsp中进行逻辑判断，书写麻烦，阅读困难！​ jsp的全局代码块：123&lt;%! public void test()&#123; System.out.println("全局代码块");&#125;%&gt; ​ 特点：声明的java代码作为全局代码转译到sevlet中，不在servlce方法里。​ 注意：全局代码快声明的代码需要局部代码快调用。​ jsp的脚本段语句：​ 特点：帮助我们快速的获取变量或者方法的返回值作为数据响应给浏览器​ 使用：&lt;%=变量名或方法%&gt;,​ 注意：不要在后面加分号​ 注意使用位置，不要瞎写。​ jsp的静态引入和动态引入：​ 静态引入： 1&lt;%@include file=&quot;要引入文件的相对路径&quot; %&gt; ​ 特点：​ 会将引入的jsp文件和当前jsp文件转译成一个java文件使用。​ 注意： ​ 静态引入的jsp文件不会单独转译成单个java（Servlet）文件。​ 不能有同名变量。 动态引入： 1&lt;jsp:include page="要引入的jsp文件的相对路径"%&gt; ​ 特点：​ 会将引入法人jsp文件单独转译，也就是会新转译出一个java文件。​ 在当前转译好的java文件中调用引入的jsp文件的转译java文件，在网页中显示合并后的结果。​ 因为是两个文件，调用关系，所以可以存在同名变量。​​ 注意：​ 动态引入允许声明同名变量引入的优点：​ 降低jsp代码的冗余，便于维护升级。​ jsp的转发标签–forward：1&lt;jsp:forward page=&quot;要转发的jsp文件的相对路径&quot;&gt;&lt;/jsp:forward&gt; ​ 特点：​ 一次请求​ 地址栏信息不改变​ 注意：​ 转发标签的额两个标签之间不能有空格​ 但是可以写&lt;jsp:param name=”str” value=”aaa” /&gt;,它会将数据以？的形式拼接在转发路径的后面​ 转发之后如何接收： 1&lt;%=request.getParameter("str")%&gt; 可以直接输出value的值。 ​ jsp的九大内置对象：​ 内置对象：jsp文件在转移成对应的Servlet文件的时候，自动生成的并声明的变量。​ 注意：​ 内置对象在jsp页面中使用，使用局部代码快或脚本段语句来使用，不能再全局代码块中使用​ 九大对象：​ pageContext：页面上下文对象，封存了其他内置对象。​ 注意：每个Jsp文件单独拥有一个pageContext对象​ 作用域：当前页面。​ request：封存当前请求数据的对象，由tomcat服务器创建，一次请求。​ session：此对象用来存储用户的不同请求的共享数据的，一次会话。​ application：也就是ServletContext对象，一个项目只有一个，存储用户共享数据的对象，以及完成其他操作。​ response：响应对象，用来响应请求处理结果给浏览器的对象，设置响应头，重定向。​ out:响应对象，Jsp内部使用，带有缓冲区的响应对象，效率高于response对象。​ Page：代表当前Jsp的对象，相当于Java中的this（其实转译完之后就是this….）。​ exception：异常对象，存储了当前的运行异常信息。​ 注意：使用此对象需要在Page中设置属性isErrorPage=”true”开启。​ config：也就是ServletConfig，主要用来获取web.xml的配置数据，完成一些初始化数据的读取。​ Jsp四大作用域：​ pageContext：当前页面，当前页面内的数据共享。​ request：一次请求内的servlet的数据共享，通过请求转发，将数据流转给下一个servlet。​ session：一次会话。一个用户的不同请求数据的共享。将数据从一次请求流转给其他请求。​ application：项目内。不同用户的数据共享问题。将数据从一个用户流转给其他用户。​ 作用：​ 数据的流转！ Jsp的路径:​ 在Jsp中资源路径可以使用相对路径完成跳转，但是：​ 问题一：资源的位置不可以随意更改。​ 问题二：需要使用../进行文件夹的跳出，使用麻烦，可读性较低。​ 使用绝对路径（开发最常用，必须会）：​ /虚拟项目名/项目资源路径​ “/“代表服务器根目录​ 相当于：ip:端口号 例如：localhost:8080​ Jsp中自带的全局路径声明：​ 1234&lt;% String path = request.getContextPath(); String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%&gt; ​ 还有head标签下的： 1&lt;base href="&lt;%=basePath%&gt;"&gt; 作用：给资源全面加项目路径：http://127.0.0.1:8080/虚拟项目名/]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Servlet转发与重定向的区别和联系]]></title>
+    <url>%2F2019%2F09%2F06%2FServlet%E8%BD%AC%E5%8F%91%E4%B8%8E%E9%87%8D%E5%AE%9A%E5%90%91%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[本人正在学习java，之前一直困扰二者有什么区别，经过一番查阅资料，终于恍然大悟。 Servlet的转发有两种：转发和重定向。 转发： 1httpServletRequest.getRequestDispatcher(&quot;资源路径&quot;).forward(httpServletRequest, httpServletResponse); 重定向： 1httpServletResponse.sendRedirect(&quot;/资源路径&quot;); 转发的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有转发代码存在, 直接跳转到新的资源（注意：这个过程是连续的，在这个过程中session可以跟随传递） 网页显示返回结果，地址栏不会变化 重定向的过程： 浏览器向服务器发送请求 服务器接收请求并处理请求 这时服务器发现有重定向代码存在 服务器会立即通知浏览器，告诉它，你去访问这个资源 这时浏览器会对新资源重新发起访问（这个过程是断开的，中间不连续） 地址栏产生相应的变化 二者的区别： 转发地址栏不会变化，重定向会变化。 转发是一次请求，而重定向是两次。 转发速度较快，重定向较慢（因为浏览器要重新发起请求）。 由于重定向是重新对资源发起访问，而浏览器默认访问方式为get，所以对应的新响应要换成get，当然这是默认情况。注意一下即可。 转发不会造成信息丢失，而重定向则会造成信息丢失。 转发只能将请求转发给同一个WEB应用中的组件，重定向可以指向任何的资源，包括当前应用程序中的其他资源，同一个站点上的其他应用程序中的资源，其他站点的资源。** 如何选择转发还是重定向？ 典型的应用场景： ​ 转发：访问 Servlet 处理业务逻辑，然后 forward 到 jsp 显示处理结果，浏览器里 URL 不变 ​ 重定向:提交表单，处理成功后 redirect 到另一个 jsp，防止表单重复提交，浏览器里 URL 变了]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
   </entry>
 </search>
