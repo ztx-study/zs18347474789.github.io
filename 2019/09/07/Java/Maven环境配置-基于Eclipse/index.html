@@ -114,7 +114,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="博客,">
 
 
 
@@ -127,13 +127,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="假装很佛系">
-<meta property="og:url" content="http://zsblogs.com/page/2/index.html">
+<meta name="description" content="Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。 Maven也可被用于构建和管理各种项目，例如C#，Ruby，Scala和其他语言编写的项目。Maven曾是Jakarta项目的子项目，现为由Apache软件基金会主持的独立A">
+<meta name="keywords" content="博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maven环境配置(基于Eclipse)">
+<meta property="og:url" content="http://zsblogs.com/2019/09/07/Java/Maven环境配置-基于Eclipse/index.html">
 <meta property="og:site_name" content="假装很佛系">
+<meta property="og:description" content="Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。 Maven也可被用于构建和管理各种项目，例如C#，Ruby，Scala和其他语言编写的项目。Maven曾是Jakarta项目的子项目，现为由Apache软件基金会主持的独立A">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-08T09:11:47.277Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="假装很佛系">
+<meta name="twitter:title" content="Maven环境配置(基于Eclipse)">
+<meta name="twitter:description" content="Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。 Maven也可被用于构建和管理各种项目，例如C#，Ruby，Scala和其他语言编写的项目。Maven曾是Jakarta项目的子项目，现为由Apache软件基金会主持的独立A">
 
 
 
@@ -163,13 +168,13 @@
 
 
 
-  <link rel="canonical" href="http://zsblogs.com/page/2/">
+  <link rel="canonical" href="http://zsblogs.com/2019/09/07/Java/Maven环境配置-基于Eclipse/">
 
 
 
 
 
-  <title>假装很佛系</title>
+  <title>Maven环境配置(基于Eclipse) | 假装很佛系</title>
   
 
 
@@ -188,8 +193,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -314,9 +318,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -329,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/12/Java/反射之基础篇/">
+    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/07/Java/Maven环境配置-基于Eclipse/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小帅">
@@ -346,9 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/12/Java/反射之基础篇/" itemprop="url">反射之基础篇</a></h1>
+          <h1 class="post-title" itemprop="name headline">Maven环境配置(基于Eclipse)</h1>
         
 
         <div class="post-meta">
@@ -361,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-12T16:39:00+08:00">
-                2019-09-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-07T19:34:40+08:00">
+                2019-09-07
               </time>
             
 
@@ -417,7 +419,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  498
                 </span>
               
 
@@ -433,7 +435,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  2
                 </span>
               
             </div>
@@ -454,25 +456,36 @@
       
 
       
-        
-          <h2 id="反射之基础篇"><a href="#反射之基础篇" class="headerlink" title="反射之基础篇"></a>反射之基础篇</h2><p>本篇主要对反射的概念和常见用法进行介绍，未涉及底层源码分析。</p>
-<blockquote>
-<p>JAVA反射机制是在运行状态中，对于任意一个实体类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</p>
+        <blockquote>
+<p><strong>Apache Maven</strong>，是一个<a href="https://zh.wikipedia.org/wiki/软件" target="_blank" rel="noopener">软件</a>（特别是<a href="https://zh.wikipedia.org/wiki/Java_(编程语言)" target="_blank" rel="noopener">Java</a>软件）<a href="https://zh.wikipedia.org/wiki/项目管理" target="_blank" rel="noopener">项目管理</a>及<a href="https://zh.wikipedia.org/wiki/自动构建" target="_blank" rel="noopener">自动构建</a>工具，由<a href="https://zh.wikipedia.org/wiki/Apache软件基金会" target="_blank" rel="noopener">Apache软件基金会</a>所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。</p>
+<p>Maven也可被用于构建和管理各种项目，例如<a href="https://zh.wikipedia.org/wiki/C♯" target="_blank" rel="noopener">C#</a>，<a href="https://zh.wikipedia.org/wiki/Ruby" target="_blank" rel="noopener">Ruby</a>，<a href="https://zh.wikipedia.org/wiki/Scala" target="_blank" rel="noopener">Scala</a>和其他语言编写的项目。Maven曾是<a href="https://zh.wikipedia.org/wiki/Jakarta项目" target="_blank" rel="noopener">Jakarta项目</a>的子项目，现为由<a href="https://zh.wikipedia.org/wiki/Apache软件基金会" target="_blank" rel="noopener">Apache软件基金会</a>主持的独立Apache项目。</p>
 </blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/12/Java/反射之基础篇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+
+<h3 id="一、安装Maven"><a href="#一、安装Maven" class="headerlink" title="一、安装Maven"></a>一、安装Maven</h3><p>1、Maven下载、解压<br>2、设置环境变量 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、新建变量M2_HOME，值为Maven的目录X:\XXX\apache-maven-XXX</span><br><span class="line">2、Path变量：将%M2_HOME%\bin添加到Path变量下</span><br></pre></td></tr></table></figure>
+
+<p>3、运行CMD，输入mvn -v后可以看到Maven的版本信息等则表示安装成功</p>
+<p>4、报错信息处理(如果正常输出版本信息则省略)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.不是内部或外部命令</span><br><span class="line">    解决方案：</span><br><span class="line">    编辑环境变量Path，以前是（%MAVEN_HOME%\bin\），改为E:\Mavenaven\apache-maven-3.5.0\bin(也就是bin目录的绝对路径)</span><br><span class="line">    重启DOS窗口。</span><br><span class="line"></span><br><span class="line">2.报错</span><br><span class="line">    Exception in thread “main”</span><br><span class="line">    java.lang.UnsupportedClassVersionError</span><br><span class="line">    这个错误是因为maven版本和jdk版本不兼容，需要更换jdk或maven版本</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、修改本地仓库的位置：（X-XXX-apache-maven-3-5-3指的是maven解压之后的路径，即环境变量M2-HOME的值）"><a href="#二、修改本地仓库的位置：（X-XXX-apache-maven-3-5-3指的是maven解压之后的路径，即环境变量M2-HOME的值）" class="headerlink" title="二、修改本地仓库的位置：（X:\XXX\apache-maven-3.5.3指的是maven解压之后的路径，即环境变量M2_HOME的值）"></a>二、修改本地仓库的位置：（X:\XXX\apache-maven-3.5.3指的是maven解压之后的路径，即环境变量M2_HOME的值）</h3><p>X:\XXX\apache-maven-3.5.3\conf\settings.xml文件：添加如下语句</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:/Java/maven/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三、Maven镜像更换为阿里云中央仓库："><a href="#三、Maven镜像更换为阿里云中央仓库：" class="headerlink" title="三、Maven镜像更换为阿里云中央仓库："></a>三、Maven镜像更换为阿里云中央仓库：</h3><p>X:\XXX\apache-maven-3.5.3\conf\settings.xml文件：在<mirrors>标签下添加如下语句：</mirrors></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt; </span><br><span class="line">  &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;/name&gt; </span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt; </span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="四、Eclipse中配置maven、创建maven项目"><a href="#四、Eclipse中配置maven、创建maven项目" class="headerlink" title="四、Eclipse中配置maven、创建maven项目"></a>四、Eclipse中配置maven、创建maven项目</h3><p>配置maven：<a href="https://www.cnblogs.com/pengyan-9826/p/7767070.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengyan-9826/p/7767070.html</a><br>创建maven项目：<a href="https://blog.csdn.net/u012081441/article/details/75201197" target="_blank" rel="noopener">https://blog.csdn.net/u012081441/article/details/75201197</a></p>
+<h3 id="五、安装spring-tool-suit插件"><a href="#五、安装spring-tool-suit插件" class="headerlink" title="五、安装spring-tool-suit插件"></a>五、安装spring-tool-suit插件</h3><p><a href="https://www.cnblogs.com/MrYoodb/p/7574566.html" target="_blank" rel="noopener">https://www.cnblogs.com/MrYoodb/p/7574566.html</a></p>
+
       
     </div>
     
     
     
 	<div>
+    
+        
     
 </div>
 	
@@ -487,397 +500,44 @@
 
     <footer class="post-footer">
       
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/10/Java/IoC容器之注解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/IoC容器之注解/" itemprop="url">IoC容器之注解</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T21:29:53+08:00">
-                2019-09-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/博客/" rel="tag"># 博客</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  368
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
-      
-
-      
-        
-          <h2 id="IoC容器之注解"><a href="#IoC容器之注解" class="headerlink" title="IoC容器之注解"></a>IoC容器之注解</h2><p>如果你厌倦配置复杂的applicationContext.xml文件，我们可以找到另外一种方法去替代它：注解</p>
-<blockquote>
-<p>注解技术是在jdk5.0版本出现的，注解是一种符号标记，可以写在类定义前，方法定义前，成员变量定义前。<br>格式是：@标记名，常见的有@Test，@Service，@Override等标记。<br>现在注解配置在主流的框架如struts,hibernate,spring中得到广泛的应用，原因是注解方式直观方便，而且很多元素都不需要在Spring配置文件中定义了，这样大大简化了xml配置内容。<br>注解名在框架底层代码定义，通过反射技术，读取注解符号运行底层代码，实现相应的功能。</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/IoC容器之注解/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
       
 	<div>
+      
+        
       
 	</div>
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/10/Java/依赖注入的三种方式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/依赖注入的三种方式/" itemprop="url">依赖注入的三种方式</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T16:02:51+08:00">
-                2019-09-10
-              </time>
+              <a href="/2019/09/07/Java/Servlet-Jsp项目实战/" rel="next" title="Servlet+Jsp项目实战">
+                <i class="fa fa-chevron-left"></i> Servlet+Jsp项目实战
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/09/08/前言/" rel="prev" title="前言">
+                前言 <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.3k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
       
 
       
-        
-          <h2 id="依赖注入的三种方式"><a href="#依赖注入的三种方式" class="headerlink" title="依赖注入的三种方式"></a>依赖注入的三种方式</h2><p>在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！</p>
-<p>这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> Teacher teacher;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> age;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/依赖注入的三种方式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
-      
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -887,14 +547,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -902,6 +559,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -929,8 +590,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1029,6 +699,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、安装Maven"><span class="nav-number">1.</span> <span class="nav-text">一、安装Maven</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、修改本地仓库的位置：（X-XXX-apache-maven-3-5-3指的是maven解压之后的路径，即环境变量M2-HOME的值）"><span class="nav-number">2.</span> <span class="nav-text">二、修改本地仓库的位置：（X:\XXX\apache-maven-3.5.3指的是maven解压之后的路径，即环境变量M2_HOME的值）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、Maven镜像更换为阿里云中央仓库："><span class="nav-number">3.</span> <span class="nav-text">三、Maven镜像更换为阿里云中央仓库：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、Eclipse中配置maven、创建maven项目"><span class="nav-number">4.</span> <span class="nav-text">四、Eclipse中配置maven、创建maven项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、安装spring-tool-suit插件"><span class="nav-number">5.</span> <span class="nav-text">五、安装spring-tool-suit插件</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1208,6 +894,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

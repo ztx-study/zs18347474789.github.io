@@ -114,7 +114,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="博客,">
 
 
 
@@ -127,13 +127,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="假装很佛系">
-<meta property="og:url" content="http://zsblogs.com/page/2/index.html">
+<meta name="description" content="JAVA框架之Spring基础环境搭建 Spring框架是 Java 平台的一个开源的全栈（Full-stack）应用程序框架和控制反转容器实现，一般被直接称为 Spring。该框架的一些核心功能理论上可用于任何 Java 应用，但 Spring 还为基于Java企业版平台构建的 Web 应用提供了大量的拓展支持。虽然 Spring 没有直接实现任何的编程模型，但它已经在 Java 社区中广为流行">
+<meta name="keywords" content="博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring入门">
+<meta property="og:url" content="http://zsblogs.com/2019/09/09/Java/Spring入门/index.html">
 <meta property="og:site_name" content="假装很佛系">
+<meta property="og:description" content="JAVA框架之Spring基础环境搭建 Spring框架是 Java 平台的一个开源的全栈（Full-stack）应用程序框架和控制反转容器实现，一般被直接称为 Spring。该框架的一些核心功能理论上可用于任何 Java 应用，但 Spring 还为基于Java企业版平台构建的 Web 应用提供了大量的拓展支持。虽然 Spring 没有直接实现任何的编程模型，但它已经在 Java 社区中广为流行">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-10T00:39:32.386Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="假装很佛系">
+<meta name="twitter:title" content="Spring入门">
+<meta name="twitter:description" content="JAVA框架之Spring基础环境搭建 Spring框架是 Java 平台的一个开源的全栈（Full-stack）应用程序框架和控制反转容器实现，一般被直接称为 Spring。该框架的一些核心功能理论上可用于任何 Java 应用，但 Spring 还为基于Java企业版平台构建的 Web 应用提供了大量的拓展支持。虽然 Spring 没有直接实现任何的编程模型，但它已经在 Java 社区中广为流行">
 
 
 
@@ -163,13 +168,13 @@
 
 
 
-  <link rel="canonical" href="http://zsblogs.com/page/2/">
+  <link rel="canonical" href="http://zsblogs.com/2019/09/09/Java/Spring入门/">
 
 
 
 
 
-  <title>假装很佛系</title>
+  <title>Spring入门 | 假装很佛系</title>
   
 
 
@@ -188,8 +193,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -314,9 +318,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -329,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/12/Java/反射之基础篇/">
+    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/09/Java/Spring入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小帅">
@@ -346,9 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/12/Java/反射之基础篇/" itemprop="url">反射之基础篇</a></h1>
+          <h1 class="post-title" itemprop="name headline">Spring入门</h1>
         
 
         <div class="post-meta">
@@ -361,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-12T16:39:00+08:00">
-                2019-09-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-09T19:12:26+08:00">
+                2019-09-09
               </time>
             
 
@@ -417,7 +419,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  675
                 </span>
               
 
@@ -433,7 +435,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  2
                 </span>
               
             </div>
@@ -454,25 +456,41 @@
       
 
       
-        
-          <h2 id="反射之基础篇"><a href="#反射之基础篇" class="headerlink" title="反射之基础篇"></a>反射之基础篇</h2><p>本篇主要对反射的概念和常见用法进行介绍，未涉及底层源码分析。</p>
-<blockquote>
-<p>JAVA反射机制是在运行状态中，对于任意一个实体类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</p>
+        <h2 id="JAVA框架之Spring基础环境搭建"><a href="#JAVA框架之Spring基础环境搭建" class="headerlink" title="JAVA框架之Spring基础环境搭建"></a>JAVA框架之Spring基础环境搭建</h2><blockquote>
+<p><strong>Spring框架</strong>是 <a href="https://zh.wikipedia.org/wiki/Java" target="_blank" rel="noopener">Java</a> 平台的一个<a href="https://zh.wikipedia.org/wiki/开放源代码" target="_blank" rel="noopener">开源</a>的全栈（Full-stack）<a href="https://zh.wikipedia.org/wiki/软件框架" target="_blank" rel="noopener">应用程序框架</a>和<a href="https://zh.wikipedia.org/wiki/控制反转" target="_blank" rel="noopener">控制反转</a>容器实现，一般被直接称为 Spring。该框架的一些核心功能理论上可用于任何 Java 应用，但 Spring 还为基于<a href="https://zh.wikipedia.org/wiki/Jakarta_EE" target="_blank" rel="noopener">Java企业版</a>平台构建的 Web 应用提供了大量的拓展支持。虽然 Spring 没有直接实现任何的编程模型，但它已经在 Java 社区中广为流行，基本上完全代替了<a href="https://zh.wikipedia.org/wiki/EJB" target="_blank" rel="noopener">企业级JavaBeans</a>（EJB）模型</p>
 </blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/12/Java/反射之基础篇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+
+<h4 id="1-搭建Spring环境"><a href="#1-搭建Spring环境" class="headerlink" title="1.搭建Spring环境"></a>1.搭建Spring环境</h4><p>下载jar包<br><a href="http://maven.springframework.org/release/org/springframework/spring/" target="_blank" rel="noopener">http://maven.springframework.org/release/org/springframework/spring/</a><br>根据版本选择，这里我选择的是spring-framework-4.3.9.RELEASE-dist.zip<br>开发spring至少需要使用的jar(5个+1个):<br>spring-aop.jar        开发AOP特性时需要的JAR<br>spring-beans.jar    处理Bean的jar            <bean><br>spring-context.jar    处理spring上下文的jar        <context><br>spring-core.jar        spring核心jar<br>spring-expression.jar    spring表达式<br>第三方提供的日志jar<br>commons-logging.jar    日志</context></bean></p>
+<p>下载完之后集体加载到类路径，也就是Build Path。</p>
+<h4 id="2-编写配置文件"><a href="#2-编写配置文件" class="headerlink" title="2.编写配置文件"></a>2.编写配置文件</h4><p>为了编写时有一些提示、自动生成一些配置信息，我们需要安装sts插件：<br>方式一：增加sts插件<br>可以给eclipse增加 支持spring的插件：spring tool suite(<a href="https://spring.io/tools/sts/all" target="_blank" rel="noopener">https://spring.io/tools/sts/all</a>)<br>下载(根据自己的eclipse版本选择)springsource-tool-suite-3.9.4.RELEASE-e4.7.3a-updatesite.zip,</p>
+<p>然后在Eclipse中安装：Help-&gt;Install new SoftWare-&gt;  Add</p>
+<p>方式二：<br>直接下载sts工具（相当于一个集合了Spring tool suite的Eclipse）: <a href="https://spring.io/tools/sts/,下载完成之后打开运行。它相当于一个自带sts的eclipse。" target="_blank" rel="noopener">https://spring.io/tools/sts/,下载完成之后打开运行。它相当于一个自带sts的eclipse。</a></p>
+<p>新建配置文件：</p>
+<p>new File -&gt;搜索spring或bean-&gt;选择Spring Bean Configuration File-&gt;起名为：applicationContext.xml(大家公认写法)</p>
+<p>配置xml文件，新增bean标签，书写如下</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--属性注入--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.zs.test.Person"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"张三"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">value</span>=<span class="string">"18"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>id :唯一标识符（也就是实例名）  class：类型（也就是类的路径）</p>
+<p>property:代表属性注入（还有另外一种构造器注入，这里先不做介绍）</p>
+<p>name ：属性名    value：赋值    </p>
+<p>3.开发Spring程序(IOC-控制反转)，编写测试类TestSpring</p>
+<p>自行写好实体类Student。</p>
+<p>测试类方法里输入：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ApplicationContext conext = <span class="keyword">new</span> 	ClassPathXmlApplicationContext(<span class="string">"applicationContext.xml"</span>) ;</span><br><span class="line"><span class="comment">//执行从springIOC容器中获取一个 id为student的对象</span></span><br><span class="line">Student student = (Student)conext.getBean(<span class="string">"student"</span>) ;</span><br><span class="line">System.out.println(student.getName);</span><br></pre></td></tr></table></figure>
+
+<p>springioc容器 会自动帮我们new了对象，并且给对象赋了值</p>
+<p>查看输出结果：张三</p>
+<p>此篇主要概括spring项目搭建的大致流程，具体细节会在后面一一介绍。</p>
+
       
     </div>
     
     
     
 	<div>
+    
+        
     
 </div>
 	
@@ -487,397 +505,44 @@
 
     <footer class="post-footer">
       
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/10/Java/IoC容器之注解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/IoC容器之注解/" itemprop="url">IoC容器之注解</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T21:29:53+08:00">
-                2019-09-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/博客/" rel="tag"># 博客</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  368
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
-      
-
-      
-        
-          <h2 id="IoC容器之注解"><a href="#IoC容器之注解" class="headerlink" title="IoC容器之注解"></a>IoC容器之注解</h2><p>如果你厌倦配置复杂的applicationContext.xml文件，我们可以找到另外一种方法去替代它：注解</p>
-<blockquote>
-<p>注解技术是在jdk5.0版本出现的，注解是一种符号标记，可以写在类定义前，方法定义前，成员变量定义前。<br>格式是：@标记名，常见的有@Test，@Service，@Override等标记。<br>现在注解配置在主流的框架如struts,hibernate,spring中得到广泛的应用，原因是注解方式直观方便，而且很多元素都不需要在Spring配置文件中定义了，这样大大简化了xml配置内容。<br>注解名在框架底层代码定义，通过反射技术，读取注解符号运行底层代码，实现相应的功能。</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/IoC容器之注解/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
       
 	<div>
+      
+        
       
 	</div>
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/10/Java/依赖注入的三种方式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/依赖注入的三种方式/" itemprop="url">依赖注入的三种方式</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T16:02:51+08:00">
-                2019-09-10
-              </time>
+              <a href="/2019/09/08/前言/" rel="next" title="前言">
+                <i class="fa fa-chevron-left"></i> 前言
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/09/09/Java/Spring如何理解ioc（控制反转）与DI（依赖注入）？/" rel="prev" title="Spring如何理解IoC（控制反转）与DI（依赖注入）？">
+                Spring如何理解IoC（控制反转）与DI（依赖注入）？ <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.3k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
       
 
       
-        
-          <h2 id="依赖注入的三种方式"><a href="#依赖注入的三种方式" class="headerlink" title="依赖注入的三种方式"></a>依赖注入的三种方式</h2><p>在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！</p>
-<p>这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> Teacher teacher;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> age;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/依赖注入的三种方式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
-      
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -887,14 +552,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -902,6 +564,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -929,8 +595,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1029,6 +704,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JAVA框架之Spring基础环境搭建"><span class="nav-number">1.</span> <span class="nav-text">JAVA框架之Spring基础环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-搭建Spring环境"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.搭建Spring环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-编写配置文件"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.编写配置文件</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1208,6 +899,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

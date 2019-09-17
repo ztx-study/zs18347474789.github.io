@@ -114,7 +114,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="博客,">
 
 
 
@@ -127,13 +127,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="假装很佛系">
-<meta property="og:url" content="http://zsblogs.com/page/2/index.html">
+<meta name="description" content="依赖注入的三种方式在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！ 这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。 123private String name;private Teacher teacher;private int age;">
+<meta name="keywords" content="博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="依赖注入的三种方式">
+<meta property="og:url" content="http://zsblogs.com/2019/09/10/Java/依赖注入的三种方式/index.html">
 <meta property="og:site_name" content="假装很佛系">
+<meta property="og:description" content="依赖注入的三种方式在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！ 这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。 123private String name;private Teacher teacher;private int age;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-10T13:17:18.515Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="假装很佛系">
+<meta name="twitter:title" content="依赖注入的三种方式">
+<meta name="twitter:description" content="依赖注入的三种方式在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！ 这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。 123private String name;private Teacher teacher;private int age;">
 
 
 
@@ -163,13 +168,13 @@
 
 
 
-  <link rel="canonical" href="http://zsblogs.com/page/2/">
+  <link rel="canonical" href="http://zsblogs.com/2019/09/10/Java/依赖注入的三种方式/">
 
 
 
 
 
-  <title>假装很佛系</title>
+  <title>依赖注入的三种方式 | 假装很佛系</title>
   
 
 
@@ -188,8 +193,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -314,391 +318,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/12/Java/反射之基础篇/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/12/Java/反射之基础篇/" itemprop="url">反射之基础篇</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-12T16:39:00+08:00">
-                2019-09-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.6k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
-      
-
-      
-        
-          <h2 id="反射之基础篇"><a href="#反射之基础篇" class="headerlink" title="反射之基础篇"></a>反射之基础篇</h2><p>本篇主要对反射的概念和常见用法进行介绍，未涉及底层源码分析。</p>
-<blockquote>
-<p>JAVA反射机制是在运行状态中，对于任意一个实体类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/12/Java/反射之基础篇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
-      
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zsblogs.com/2019/09/10/Java/IoC容器之注解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张小帅">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="假装很佛系">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/IoC容器之注解/" itemprop="url">IoC容器之注解</a></h1>
-        
-
-        <div class="post-meta">
-		
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-10T21:29:53+08:00">
-                2019-09-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JAVA/" itemprop="url" rel="index">
-                    <span itemprop="name">JAVA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                  <span class="post-meta-divider">|</span>
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  368
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-		
-      
-      
-
-      
-        
-          <h2 id="IoC容器之注解"><a href="#IoC容器之注解" class="headerlink" title="IoC容器之注解"></a>IoC容器之注解</h2><p>如果你厌倦配置复杂的applicationContext.xml文件，我们可以找到另外一种方法去替代它：注解</p>
-<blockquote>
-<p>注解技术是在jdk5.0版本出现的，注解是一种符号标记，可以写在类定义前，方法定义前，成员变量定义前。<br>格式是：@标记名，常见的有@Test，@Service，@Override等标记。<br>现在注解配置在主流的框架如struts,hibernate,spring中得到广泛的应用，原因是注解方式直观方便，而且很多元素都不需要在Spring配置文件中定义了，这样大大简化了xml配置内容。<br>注解名在框架底层代码定义，通过反射技术，读取注解符号运行底层代码，实现相应的功能。</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/IoC容器之注解/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-	<div>
-    
-</div>
-	
-    
-	
-	
-
-    
-
-  
-	
-
-    <footer class="post-footer">
-      
-	<div>
-      
-	</div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -728,9 +350,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/Java/依赖注入的三种方式/" itemprop="url">依赖注入的三种方式</a></h1>
+          <h1 class="post-title" itemprop="name headline">依赖注入的三种方式</h1>
         
 
         <div class="post-meta">
@@ -836,24 +456,122 @@
       
 
       
-        
-          <h2 id="依赖注入的三种方式"><a href="#依赖注入的三种方式" class="headerlink" title="依赖注入的三种方式"></a>依赖注入的三种方式</h2><p>在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！</p>
+        <h2 id="依赖注入的三种方式"><a href="#依赖注入的三种方式" class="headerlink" title="依赖注入的三种方式"></a>依赖注入的三种方式</h2><p>在ioc容器中中定义bean的前提：该bean的类 必须提供了 无参构造！</p>
 <p>这是实体类定义的属性，都有对应的get/set方法，为节省篇幅没有写。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">private</span> Teacher teacher;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> age;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/09/10/Java/依赖注入的三种方式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+
+<a id="more"></a>
+
+<h4 id="1、属性注入的两种方式（property）"><a href="#1、属性注入的两种方式（property）" class="headerlink" title="1、属性注入的两种方式（property）"></a>1、属性注入的两种方式（property）</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.zs.test.Person"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"张三"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">value</span>=<span class="string">"18"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"teacher"</span> <span class="attr">ref</span>=<span class="string">"teacher"</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--其实它还可以这样写--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.zs.test.Person"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>张三<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"age"</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>18<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"teacher"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">ref</span>&gt;</span>teacher<span class="tag">&lt;/<span class="name">ref</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意： </p>
+<ul>
+<li>基本数据类型加String注入用value，对象注入采用ref</li>
+<li>不仅仅可以通过name来注入，也可以用索引位置index，数据类型type等等都可以，也可以联合使用</li>
+<li>如果没有指定name，那么value会默认注入String类型（因为都加引号），如果想给其他类型注入最好加上name来识别。</li>
+</ul>
+<p>属性注入两种方式的区别：</p>
+<p>​            </p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">使用子元素value注入</th>
+<th align="center">使用value属性注入</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">参数值位置</td>
+<td align="center">写在首尾标签（<value></value>）的中间(不加双引号)</td>
+<td align="center">写在value的属性值中（必须加双引号）</td>
+</tr>
+<tr>
+<td align="center">type属性</td>
+<td align="center">有（可选）可以通过type属性指定数据类型</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">参数值包含特殊字符（&lt;， &amp;）时的处理方法</td>
+<td align="center">两种处理方法。一、使用<!--[CDATA[ 内容]]-->标记，二、使用XML预定义的实体引用</td>
+<td align="center">一种处理方法。即使用XML预定义的实体引用</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>实体引用</th>
+<th>表示的符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&gt;</td>
+</tr>
+</tbody></table>
+<p>给对象类型赋值null ：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> &gt;</span>  </span><br><span class="line">	<span class="tag">&lt;<span class="name">null</span>/&gt;</span>       --&gt;注意 没有<span class="tag">&lt;<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>赋空值 “”          </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> &gt;</span>  </span><br><span class="line">		<span class="tag">&lt;<span class="name">value</span>&gt;</span><span class="tag">&lt;/<span class="name">value</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2、构造器注入（constructor）"><a href="#2、构造器注入（constructor）" class="headerlink" title="2、构造器注入（constructor）"></a>2、构造器注入（constructor）</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.zs.test.Person"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"李四"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">value</span>=<span class="string">"30"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">ref</span>=<span class="string">"teacher"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li>最好按构造器参数顺序来赋值</li>
+<li>其余注意与属性赋值类似</li>
+</ul>
+<h4 id="3、p命名空间注入"><a href="#3、p命名空间注入" class="headerlink" title="3、p命名空间注入"></a>3、p命名空间注入</h4><p>需要在文件顶部添加</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xmlns:p=<span class="string">"http://www.springframework.org/schema/p"</span></span><br></pre></td></tr></table></figure>
+
+<p>注入方法</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.zs.test.Person"</span> <span class="attr">p:name</span>=<span class="string">"王五"</span> <span class="attr">p:age</span>=<span class="string">"90"</span> <span class="attr">p:teacher-ref</span>=<span class="string">"teacher&gt;&lt;/bean&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li><p>直接在bean标签内赋值</p>
+</li>
+<li><p>注入基本数据类型为:p:属性名=”值”，注入对象为p:对象名-ref=”对象”</p>
+</li>
+<li><p>多个注入之间必须以空格分隔</p>
+</li>
+</ul>
+<h2 id="集合类型注入："><a href="#集合类型注入：" class="headerlink" title="集合类型注入："></a>集合类型注入：</h2><p>1、数组注入：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"collectionDemo"</span> <span class="attr">class</span>=<span class="string">"org.lanqiao.entity.AllCollectionType"</span> &gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"arrayElement"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">array</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>足球1<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>篮球1<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>乒乓球1<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">array</span>&gt;</span>			</span><br><span class="line">		<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2、List、Set集合注入：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"collectionDemo"</span> <span class="attr">class</span>=<span class="string">"org.lanqiao.entity.AllCollectionType"</span> &gt;</span></span><br><span class="line">	</span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"listElement"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>足球<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>篮球<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">value</span>&gt;</span>乒乓球<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"listElement"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">list</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>足球xx<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>篮球xx<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>乒乓球xxx<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">list</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>3、Map注入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"collectionDemo"</span> <span class="attr">class</span>=<span class="string">"org.lanqiao.entity.AllCollectionType"</span> &gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"mapElement"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">map</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">entry</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">key</span>&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">value</span>&gt;</span>foot<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>足球3<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">entry</span>&gt;</span></span><br><span class="line">						</span><br><span class="line">				<span class="tag">&lt;<span class="name">entry</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">key</span>&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">value</span>&gt;</span>basket<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>篮球3<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">entry</span>&gt;</span></span><br><span class="line">						</span><br><span class="line">				<span class="tag">&lt;<span class="name">entry</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">key</span>&gt;</span></span><br><span class="line">						<span class="tag">&lt;<span class="name">value</span>&gt;</span>pp3<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">					<span class="tag">&lt;<span class="name">value</span>&gt;</span>乒乓球<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;/<span class="name">entry</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">map</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>4、property注入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"collectionDemo"</span> <span class="attr">class</span>=<span class="string">"org.lanqiao.entity.AllCollectionType"</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"propsElement"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">props</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">prop</span> <span class="attr">key</span>=<span class="string">"foot4"</span>&gt;</span>足球4<span class="tag">&lt;/<span class="name">prop</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">prop</span> <span class="attr">key</span>=<span class="string">"basket4"</span>&gt;</span>篮球4<span class="tag">&lt;/<span class="name">prop</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">prop</span> <span class="attr">key</span>=<span class="string">"pp4"</span>&gt;</span>乒乓球4<span class="tag">&lt;/<span class="name">prop</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">props</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注：set、list、数组   各自都有自己的标签<set> <list> <array>，但是也可以混着用</array></list></set></p>
+<h2 id="自动装配（只适用于ref类型）"><a href="#自动装配（只适用于ref类型）" class="headerlink" title="自动装配（只适用于ref类型）"></a>自动装配（只适用于ref类型）</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">...class</span>=<span class="string">"org.lanqiao.entity.Course"</span>  <span class="attr">autowire</span>=<span class="string">"byName|byType|constructor|no"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也就是给bean标签添加属性autowire，可选值有byName、byType、constructor</p>
+<p>byName本质是byId<br>byName:  自动寻找：其他bean的id值=该Course类的属性名，不用写注入的代码<br>byType:  其他bean的类型(class)  是否与 该Course类的ref属性类型一致  （注意，此种方式 必须满足：当前Ioc容器中 只能有一个Bean满足条件  ）<br>constructor： 其他bean的类型(class)  是否与 该Course类的构造方法参数 的类型一致；此种方式的本质就是byType</p>
+<p>还可以在头文件beans标签中中 一次性将该ioc容器的所有bean  统一设置成自动装配：<br>加入 default-autowire=”byName”</p>
+<p>注意：自动装配虽然可以减少代码量，但是会降低程序的可读性，使用时需要谨慎。</p>
+
       
     </div>
     
     
     
 	<div>
+    
+        
     
 </div>
 	
@@ -868,16 +586,44 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/博客/" rel="tag"># 博客</a>
+          
+        </div>
+      
 	<div>
+      
+        
       
 	</div>
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/09/Java/Spring如何理解ioc（控制反转）与DI（依赖注入）？/" rel="next" title="Spring如何理解IoC（控制反转）与DI（依赖注入）？">
+                <i class="fa fa-chevron-left"></i> Spring如何理解IoC（控制反转）与DI（依赖注入）？
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/10/Java/IoC容器之注解/" rel="prev" title="IoC容器之注解">
+                IoC容器之注解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -887,14 +633,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -902,6 +645,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -929,8 +676,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1029,6 +785,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖注入的三种方式"><span class="nav-number">1.</span> <span class="nav-text">依赖注入的三种方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、属性注入的两种方式（property）"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、属性注入的两种方式（property）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、构造器注入（constructor）"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、构造器注入（constructor）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、p命名空间注入"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、p命名空间注入</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#集合类型注入："><span class="nav-number">2.</span> <span class="nav-text">集合类型注入：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动装配（只适用于ref类型）"><span class="nav-number">3.</span> <span class="nav-text">自动装配（只适用于ref类型）</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1208,6 +980,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
